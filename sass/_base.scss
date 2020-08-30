@@ -40,3 +40,26 @@ body {
     grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
     grid-template-columns: 8rem minmax(6rem,1fr) repeat(8, minmax(min-content, 14rem)) minmax(6rem,1fr);
 }
+
+
+@media only screen and (max-width:75em){
+    html {
+        font-size: 50%;
+    }
+}
+
+@media only screen and (max-width:62.5em){
+    .container {
+        display: grid;
+        grid-template-rows: 6rem 80vh min-content 40vw repeat(3, min-content);
+        grid-template-columns:0 minmax(6rem,1fr) repeat(8, minmax(min-content, 14rem)) minmax(6rem,1fr);
+    }
+}
+
+@media only screen and (max-width:50em){
+    .container {
+        display: grid;
+        grid-template-rows: 6rem calc(100vh - 6rem) min-content min-content min-content repeat(3, min-content);
+        
+    }
+}
